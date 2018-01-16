@@ -1,8 +1,4 @@
 {
-  "title" : "Parsing the JSON!",
-  "songs" : [ "Just parse it", "Go Json", "Json Json" ],
-  "artist" : {
-    "name" : "Jackson",
-    "birthDate" : "2009-05-09"
-  }
+  "name" : "Jackson",
+  "birthDate" : "2009-05-09"
 }

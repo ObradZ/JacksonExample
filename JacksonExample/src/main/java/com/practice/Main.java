@@ -1,12 +1,10 @@
 package com.practice;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import com.practice.Entity.Album;
 import com.practice.Entity.Artist;
+import com.practice.Mapper.JsonObjectReader;
 import com.practice.Mapper.JsonObjectWritter;
-import java.io.File;
-import java.io.IOException;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.ArrayList;
@@ -35,8 +33,10 @@ public class Main {
 	}});
 	
 //	Writting json
-	JsonObjectWritter.writeJson(album, om, "album.json");
-	
+	JsonObjectWritter.writeJson(artist, om, "album.json");
+
+//	Reading from json
+	Object album2 = (Album )JsonObjectReader.readJson(Album.class, om, "album.json");
 
 
 	
