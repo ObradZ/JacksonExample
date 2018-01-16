@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.practice.Entity.Album;
 import com.practice.Entity.Artist;
-import com.practice.Mapper.JsonObjectMapper;
+import com.practice.Mapper.JsonObjectWritter;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -35,7 +35,7 @@ public class Main {
 	}});
 	
 //	Writting json
-	JsonObjectMapper.writeJson(album, om, "album.json");
+	JsonObjectWritter.writeJson(album, om, "album.json");
 	
 
 
