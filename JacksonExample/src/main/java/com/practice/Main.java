@@ -38,7 +38,6 @@ public class Main {
 //	Reading from json
 	Object album2 = (Album )JsonObjectReader.readJson(Album.class, om, "album.json");
 
-
 	
 	
 	
